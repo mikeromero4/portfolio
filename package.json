@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": " <michael@yourtechclass.com>",
   "dependencies": {
+    "@iconify/react": "^1.1.1",
+    "@iconify/icons-logos": "^1.0.7",
     "gatsby": "^2.17.6",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-manifest": "^2.2.25",
@@ -14,6 +16,7 @@
     "gatsby-plugin-sharp": "^2.2.34",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-transformer-sharp": "^2.3.1",
+    "iconify": "^1.2.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
@@ -26,7 +29,8 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby","portfolio"
+    "gatsby",
+    "portfolio"
   ],
   "license": "MIT",
   "scripts": {
