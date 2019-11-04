@@ -6,7 +6,7 @@ Most of my work is closed source, so this is the best sample I can show of my co
 In this project:
 <ul>
 <li>Attention has been put towards organizing a good file structure with modular and reusable components.</li>
-<li>CSS follows BEM methodology, precompiled with scss and grouped with coresponding components.</li>
+<li>CSS follows BEM methodology, precompiled with scss and grouped with respective components.</li>
 <li>Responsive mobile-first design and accessable semantic markup.</li>
 
 <li>JavaScript follows functional practices and uses modern ES6+ syntax</li>
