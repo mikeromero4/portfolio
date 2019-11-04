@@ -1,28 +1,32 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Michael Romero's portfolio website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": " <michael@yourtechclass.com>",
   "dependencies": {
     "gatsby": "^2.17.6",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-manifest": "^2.2.25",
     "gatsby-plugin-offline": "^3.0.17",
     "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.2.34",
     "gatsby-source-filesystem": "^2.1.35",
     "gatsby-transformer-sharp": "^2.3.1",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.11.0",
+    "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby","portfolio"
   ],
   "license": "MIT",
   "scripts": {
@@ -35,9 +39,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mikeromero4/portfolio"
   }
 }
