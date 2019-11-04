@@ -1,10 +1,21 @@
 
 @import "../../../style/variables.scss";
 .full-screen{
-  height:100vh;
+  height:600px; //fallback for vh
+  height:100vh; //fallback for calc
+  //height: calc(var(--vh, 1vh) * 100); //fixes vh bug on mobile browsers ('--vh' prop set through js to exclude browser navigation height)
+  display: flex;
   flex-direction: column;
 }
+//calc fallback for mobile vh bug (part 2)(should probably be in a shame file):
+   html, body,  #___gatsby,#gatsby-focus-wrapper,main,#main-content,#portfolio-page,#section--intro{
+    // height:100%;
+  }
+
 #section--intro {
+  //calc fallback for mobile vh bug (part 1):
+  background:$primary-color2;
+
   height: 100%;
   flex-grow:1;
   display: flex;

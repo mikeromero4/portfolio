@@ -1,10 +1,25 @@
 import React from "react"
+import Animation from '../../animation/index'
 import "./style.scss"
+
+let animationSettings = {
+  speed: 0.4,
+  frequency: 120,
+  amplitude: 8,
+  flowSpeed: 90,
+  iconSize: 60,
+  spacing: 80,
+  lineHeight: 50,
+  half: false,
+  shrink: false,
+}
 
 export default () => {
   return (
     <section id="section--intro">
       <Intro />
+      <Animation settings={animationSettings}/>
+
     </section>
   )
 }
