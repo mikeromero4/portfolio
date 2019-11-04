@@ -1,18 +1,17 @@
 <h2>portfolio website</h2>
 <h3>of Michael Romero</h3>
 
-Most of my work is closed source, so this is the best sample of a front-end project that i can show
+Most of my work is closed source, so this is the best sample I can show of my coding style and ability.
 
 In this project:
 <ul>
-<li>Attention has been put towards organizing a good file structure that is both scalable and modular. scss files follow BEM methodology and are grouped with coresponding components.</li>
+<li>Attention has been put towards organizing a good file structure with modular and reusable components.</li>
+<li>CSS follows BEM methodology, precompiled with scss and grouped with coresponding components.</li>
+<li>Responsive mobile-first design and accessable semantic markup.</li>
 
-<li>The design is fully responsive and the HTML is well structured and semantic.</li>
+<li>JavaScript follows functional practices and uses modern ES6+ syntax</li>
 
-<li>Components are modular and reusable</li>
-
-
-<li>Normally i would try to design with better support for older browsers, but considering the target audience, I skipped writing some fallbacks and support for older and uncommon browsers.</li>
+<li>Normally i would try to design with better support for older browsers, but I'm preamptively assuming (predicting) that 99% of the target audience for this site will be using modern browsers, I skipped writing some fallbacks and support for older and uncommon browsers.</li>
 </ul>
 3rd party code other than gatsby:
   sticky header
