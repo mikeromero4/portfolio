@@ -1,6 +1,9 @@
 import React from "react"
 import Animation from '../../animation/index'
 import "./style.scss"
+import Layer from "../../UI/layers/index"
+
+import Background from "../../UI/background/striped/index"
 
 let animationSettings = {
   speed: 0.4,
@@ -18,7 +21,10 @@ export default () => {
   return (
     <section id="section--intro">
       
+<Layer layers = {[
+  <Background variation = "primary"/>,
       <Intro />
+]}/>
       <Animation settings={animationSettings}/>
 
     </section>

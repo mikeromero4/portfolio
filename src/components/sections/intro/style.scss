@@ -1,3 +1,4 @@
+@import "../../UI/background/mixins.scss";
 
 @import "../../../style/variables.scss";
 .full-screen{
@@ -14,7 +15,8 @@
 
 #section--intro {
   //calc fallback for mobile vh bug (part 1):
-  background:$primary-color2;
+  @include gradient($primary-color1, $primary-color2);
+
 
   height: 100%;
   flex-grow:1;

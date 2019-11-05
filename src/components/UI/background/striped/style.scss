@@ -15,7 +15,7 @@
 @mixin bgLayersVertical($color1, $color2) {
   .striped-bg__layer{
   &--1 {
-    @include stripes($color1, $color2,45deg,20%);//layer 1: stripes
+    @include stripes($color1, $color2,90deg,20%);//layer 1: stripes
   }
   &--2 {
     @include gradient($color1, $color2);//layer 2: gradient

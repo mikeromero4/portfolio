@@ -11,22 +11,18 @@ const Layout = ({ children,Intro }) => {
   let sectionHeight = element.current ? element.current.offsetHeight : 0
 console.log(sectionHeight)
   return (
- <Layer layers = {[
-   <Background variation = "primary2"/>,
-   
    <>
        <Header height={sectionHeight}/>
+       <div id = "intro" ref={element} className = "full-screen">
 
+<Intro height={sectionHeight}/>
+</div>
    <main id = "main-content">
-    <div id = "intro" ref={element} className = "full-screen">
-
-      <Intro height={sectionHeight}/>
-    </div>
+    
       {children}
     </main>
     <Footer/>
     </>
- ]}/>
     
   )
 }
