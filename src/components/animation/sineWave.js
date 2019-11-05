@@ -44,18 +44,20 @@ let Curve = ({data}) => (
       </svg>
     </div>
   )
+
 function sineFromX(x,settings){
     return settings.amplitude
-    + Math.sin(x / Math.max(settings.frequency||100, settings.width / 1200) 
+    + Math.sin(x / settings.frequency
     + settings.time / (settings.flowSpeed||20)) * settings.amplitude
 }
 function createPath(data) {
     let points = []
-    for (let i = 0; i < data.width; i++) {
+    for (let i = 0; i < data.width; i+=50) {
       let x= i - (data.skew||0)
       let y = sineFromX(x,data)
       points.push([x,y])
     }
+    points.push([data.width,sineFromX(data.width,data)])
     if (data.half || !data.lineHeight) {
       //draw one curved side and one flat side
       points = [[0, data.amplitude*2+data.lineHeight],[0, 0], ...points, [data.width, 0],[data.width, data.amplitude*2+data.lineHeight]]

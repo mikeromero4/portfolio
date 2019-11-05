@@ -1,10 +1,15 @@
+
 import React from "react"
 import { useState, useEffect } from "react"
 import "./style.scss"
 import Waves from "./sineWave"
 import Icons from "./icons"
 import { relative } from "path"
-
+let invocationsPerSecond=0; //test
+window.setInterval(function(){
+  console.log(invocationsPerSecond)
+  invocationsPerSecond=0
+},1000)
 //this should probably(?) be a class component due to increased use of hooks
 export default props => {
   let [time, setTimer] = useState(0)
@@ -23,6 +28,8 @@ export default props => {
   }, [])
   function animate(time) {
     setTimer(time / 10)
+    invocationsPerSecond++
+    console.log('d')
     requestRef.current = requestAnimationFrame(animate)
   }
 
