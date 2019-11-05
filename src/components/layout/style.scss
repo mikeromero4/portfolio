@@ -9,11 +9,7 @@ header{
   }  
   #main-content {
     padding: 0 9%;
-    background: linear-gradient(
-      $primary-color1,
-      mix($primary-color2,$primary-color1,50%) 30%,
-      $primary-color2 90%
-    );
+    background: $sidebar-color;
   }
   @media only screen and (max-width: 800px) {
     #main-content {

@@ -1,0 +1,15 @@
+@mixin stripes($color1, $color2, $deg:45deg,$padding:0%) {
+    background-image: repeating-linear-gradient(
+      $deg,
+      $color1 0px,
+      mix($color2, $color1, 70%) 3px,
+      $color1 7px
+    );
+  }
+@mixin gradient($color1, $color2,$padding:10%) {
+    background-image: linear-gradient(
+      $color1 $padding,
+      rgba(black, 0) 50%,
+      $color2 100%-$padding
+    );
+  }

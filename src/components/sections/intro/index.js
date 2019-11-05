@@ -17,6 +17,7 @@ let animationSettings = {
 export default () => {
   return (
     <section id="section--intro">
+      
       <Intro />
       <Animation settings={animationSettings}/>
 
@@ -25,7 +26,7 @@ export default () => {
 }
 
 let Intro = () => (
-  <div id="intro" style={{ flexGrow: 1, flexBasis: "50%" }}>
+  <div style={{ flexGrow: 1, flexBasis: "50%" }}>
     <div className="inner-container">
       <h2>Michael Romero</h2>
       <h3>
