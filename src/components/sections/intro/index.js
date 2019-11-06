@@ -1,5 +1,5 @@
 import React from "react"
-import Animation from '../../animation/index'
+import Animation from '../../UI/animation/index'
 import "./style.scss"
 import Layer from "../../UI/layers/index"
 
