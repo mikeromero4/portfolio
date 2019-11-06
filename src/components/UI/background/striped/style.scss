@@ -5,10 +5,10 @@
 @mixin bgLayers($color1, $color2) {
   .striped-bg__layer{
   &--1 {
-    @include stripes($color1, $color2);//layer 1: stripes
+    @include stripes($color2, lighten($color2,20%),45deg);//layer 1: stripes
   }
   &--2 {
-    @include gradient($color1, $color2);//layer 2: gradient
+    @include gradient(lighten($color2,20%), $color2);//layer 2: gradient
   }
 }
 }
