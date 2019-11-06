@@ -54,7 +54,7 @@ function createPath(data) {
     let points = []
     for (let i = 0; i < data.width; i+=50) {
       let x= i - (data.skew||0)
-      let y = sineFromX(x,data)
+      let y =  sineFromX(x,data)
       points.push([x,y])
     }
     points.push([data.width,sineFromX(data.width,data)])
@@ -69,6 +69,6 @@ function createPath(data) {
         ...points.map(e => [e[0] + (data.skew||0), e[1] + data.lineHeight]).reverse(),
       ]
     }
-    let path = "M" + points.map(p =>`${p[0]},${p[1]}`).join(" L")
+    let path = "M" + points.map(p =>`${p[0]},${p[1].toFixed(2)}`).join(" L")
     return path
   }
