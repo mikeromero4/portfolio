@@ -24,10 +24,15 @@ export default props => {
   return <>{items}</>
 }
 let Item = props => {
-  let { height } = props.settings
   let { x, y, opacity,display } = calculateIconPosition(props)
   let size = props.settings.shrink ? Math.min(opacity / 2, 0.9) : 1
   return (
+    <div
+    style={{
+      position: "absolute",
+      bottom: props.settings.height * (35 / 100) + props.settings.iconSize / 2 + 50 + "px",
+    }}
+  >
     <div
       className="icon-container"
       id="icon-animation"
@@ -47,7 +52,7 @@ let Item = props => {
           icon={icons[props.index]}
         />
       </div>
-    </div>
+    </div>    </div>
   )
 }
 
