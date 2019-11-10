@@ -1,20 +1,20 @@
 import React from "react"
-import Animation from '../../UI/animation/index'
+import Animation from '../../molecules/animation/index'
 import "./style.scss"
-import Layer from "../../UI/layers/index"
+import Layer from "../../molecules/layers/index"
 
-import Background from "../../UI/background/striped/index"
+import Background from "../../molecules/background/striped/index"
 
 let animationSettings = {
   speed: 0.4,
   frequency: 120,
   amplitude: 8,
   flowSpeed: 90,
-  iconSize: 60,
+  iconSize: 90,
   spacing: 80,
   lineHeight: 50,
   half: false,
-  shrink: false,
+  shrink: true,
 }
 
 export default () => {

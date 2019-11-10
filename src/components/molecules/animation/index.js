@@ -22,7 +22,7 @@ export default class extends React.Component {
   }
   render() {
     const { props,element:{current} } = this
-    let width, height = 0
+    let width=0, height = 0
     if (current){
       height = current.offsetHeight
       width = current.offsetWidth
@@ -36,7 +36,7 @@ export default class extends React.Component {
     return (
       <div className="animation">
         <div ref={this.element} style={{ position: "relative", height: "100%" }}>
-            <Icons settings={settings} time={this.state.time} />
+        <Icons settings={settings} time={this.state.time} />
         </div>
         <Waves settings={settings} time={this.state.time} />
       </div>

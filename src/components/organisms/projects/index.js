@@ -1,9 +1,9 @@
 import React from "react"
-import Content from "../../UI/content"
+import Content from "../../molecules/content"
 import Project from "./project"
 import "./style.scss"
-import Bg from "../../UI/background/striped"
-import Layer from "../../UI/layers/index"
+import Bg from "../../molecules/background/striped"
+import Layer from "../../molecules/layers/index"
 
 export default () => (
   <div>

@@ -2,9 +2,9 @@ import React from "react"
 import "./style.scss"
 import Footer from "./footer"
 import Header from "./header"
-import Layer from "../UI/layers/index"
+import Layer from "../molecules/layers/index"
 
-import Background from "../UI/background/striped/index"
+import Background from "../molecules/background/striped/index"
 
 const Layout = ({ children,Intro }) => {
   let element =  React.useRef()

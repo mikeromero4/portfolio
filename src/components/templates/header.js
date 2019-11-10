@@ -1,4 +1,4 @@
-import Navigation from "../UI/navbar/index"
+import Navigation from "../molecules/navbar/index"
 import Headroom from "react-headroom"
 import React from "react"
 let navigationList = ["about", "projects", "contact"]

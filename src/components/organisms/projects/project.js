@@ -1,7 +1,7 @@
 import React from "react"
 import img1 from "../../../images/2.png"
-import Content from "../../UI/content"
-import Media from "../../UI/media"
+import Content from "../../molecules/content"
+import Media from "../../molecules/media"
 
 export default ({ name, description, url, technologies,purpose }) => (
     <div className = "project">
